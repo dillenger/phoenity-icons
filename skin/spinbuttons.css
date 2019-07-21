@@ -1,0 +1,14 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ::::: spinbutton fix ::::: */
+
+html|input[type="number"]::-moz-number-spin-box {
+	-moz-appearance: spinner;
+	margin-top: -5px;
+	margin-inline-end: -4px;
+	margin-bottom: -5px;
+}

@@ -1,0 +1,5 @@
+Changelog for Phoenity Icons
+
+2.0
+First public release, icons for the main 3-pane window only.
+Supports some extensions: Lightning, Quickfolders, QuoteCollapse, uBlockOrigin, Mail Redirect.
