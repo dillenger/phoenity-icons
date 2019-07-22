@@ -3,3 +3,7 @@ Changelog for Phoenity Icons
 2.0
 First public release, icons for the main 3-pane window only.
 Supports some extensions: Lightning, Quickfolders, QuoteCollapse, uBlockOrigin, Mail Redirect.
+
+2.1
+Added icons for the Compose, Addressbook and Account Settings windows.
+Added support for some extensions: IMAP Quota, ProfileSwitcher, gContactSync.

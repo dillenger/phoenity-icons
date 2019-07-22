@@ -15,6 +15,7 @@
     }
   },
   "icons": {
-    "32": "skin/icons/phoenityIcons.png"
+    "32": "skin/icons/phoenityIcons32.png",
+    "64": "skin/icons/phoenityIcons64.png"
   }
 }
