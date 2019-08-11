@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE overlay >
+<!DOCTYPE overlay>
 
 <?xml-stylesheet href="chrome://messenger/content/bindings.css" type="text/css"?>
 <?xml-stylesheet href="chrome://phoenityIcons/skin/primaryToolbar.css" type="text/css"?>
@@ -14,7 +14,7 @@
 <?xml-stylesheet href="chrome://phoenityIcons/skin/quickFilterBar.css" type="text/css"?>
 <?xml-stylesheet href="chrome://phoenityIcons/skin/searchBox.css" type="text/css"?>
 <?xml-stylesheet href="chrome://phoenityIcons/skin/mailWindow1.css" type="text/css"?>
-<?xml-stylesheet href="chrome://phoenityIcons/skin/spinbuttons.css" type="text/css"?>
+<?xml-stylesheet href="chrome://phoenityIcons/skin/numberinput.css" type="text/css"?>
 
 <?xml-stylesheet href="chrome://phoenityIcons/skin/messengercompose/messengercompose.css" type="text/css"?>
 <?xml-stylesheet href="chrome://phoenityIcons/skin/addressbook/addressbook.css" type="text/css"?>
@@ -32,11 +32,15 @@
 <?xml-stylesheet href="chrome://phoenityIcons/skin/QuickFolders/QuickFolders.css" type="text/css"?>
 <?xml-stylesheet href="chrome://phoenityIcons/skin/uBlockOrigin/uBlockOrigin.css" type="text/css"?>
 <?xml-stylesheet href="chrome://phoenityIcons/skin/gContactSync/gContactSync.css" type="text/css"?>
+<?xml-stylesheet href="chrome://phoenityIcons/skin/pswitcher2/pswitcher2.css" type="text/css"?>
 
 <?xml-stylesheet href="chrome://phoenityIcons/skin/toggleQuotes/toggleQuotes.css" type="text/css"?>
 
-<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="phoenityIcons"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+         xmlns:html="http://www.w3.org/1999/xhtml">
 
 <script type="application/javascript" src="chrome://global/content/globalOverlay.js"/>
+<script type="application/javascript" src="chrome://messenger/content/mailWindowOverlay.js"/>
 
 </overlay>

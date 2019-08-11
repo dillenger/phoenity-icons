@@ -6,6 +6,9 @@
   == Styles for the main Mail window in the default layout scheme.
   ======================================================================= */
 
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
 #accountCentralBox:-moz-lwtheme {
   border-bottom: none;
 }

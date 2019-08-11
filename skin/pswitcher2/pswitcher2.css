@@ -1,0 +1,11 @@
+#profSwitcherButtonTB .toolbarbutton-icon {
+  width: 26px;
+  height: 26px;
+}
+
+toolbar[iconsize="small"] #profSwitcherButtonTB .toolbarbutton-icon {
+  width: 18px;
+  height: 18px;
+}
+
+

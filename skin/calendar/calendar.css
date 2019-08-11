@@ -2,6 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+.mail-toolbox > #calendar-toolbar2,
+.mail-toolbox > #task-toolbar2 {
+  padding-inline-start: 3px;
+  padding-inline-end: 3px;
+}
+
 /* save button */
 
 #button-save.cal-event-toolbarbutton,

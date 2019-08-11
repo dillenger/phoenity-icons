@@ -6,9 +6,8 @@
   == Styles shared throughout the Messenger application.
   ======================================================================= */
 
-/*
-@import url("chrome://PhoenityIcons-OS/skin/messenger.css");
-*/
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* ::::: online/offline icons ::::: */
 

@@ -6,6 +6,9 @@
   == Icons for menus which represent mail folder.
   ======================================================================= */
 
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
 /* ::::: folder icons for menus ::::: */
 
 .folderMenuItem {

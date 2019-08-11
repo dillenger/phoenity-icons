@@ -6,6 +6,9 @@
   == Styles for the Messenger Account Central panel.
   ======================================================================= */
 
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
 .acctCentralText {
   min-height: 32px;
   margin-bottom: 6px;
