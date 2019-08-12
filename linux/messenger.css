@@ -31,6 +31,9 @@ toolbarseparator {
   :root:not([tabsintitlebar]) .titlebar-placeholder[type="caption-buttons"] {
     width: 0px !important;
   }
+  :root[tabsintitlebar] #mail-toolbar-menubar2:not([autohide]) ~ #tabs-toolbar .titlebar-placeholder[type="caption-buttons"] {
+    display: none;
+  }
   :root[tabsintitlebar]:-moz-lwtheme #titlebar-buttonbox {
     --toolbarbutton-hover-background: var(--lwt-toolbarbutton-hover-background, rgba(0, 0, 0, .1));
     --toolbarbutton-hover-bordercolor: var(--lwt-toolbarbutton-hover-background, rgba(0, 0, 0, .1));
