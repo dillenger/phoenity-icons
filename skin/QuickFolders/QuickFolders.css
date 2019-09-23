@@ -2,6 +2,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+@namespace html "http://www.w3.org/1999/xhtml";
+
 /* One Button Panel */
 
 #QuickFolders-Toolbar #QuickFolders-oneButtonPanel toolbarbutton:hover,
@@ -107,6 +110,7 @@ toolbar#QuickFolders-Toolbar.quickfolders-flat #QuickFolders-FoldersBox toolbarb
 #QuickFolders-Toolbar.quickfolders-realTabs toolbarbutton:hover,
 #QuickFolders-Toolbar.quickfolders-realTabs toolbarbutton[checked="true"] {
   background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.1) 45%, rgba(0,0,0,0.05) 55%) !important;
+  color: unset;
 }
 
 #QuickFolders-Toolbar.quickfolders-realTabs #QuickFolders-oneButtonPanel toolbarbutton:hover,
@@ -164,9 +168,6 @@ toolbar#QuickFolders-Toolbar.quickfolders-flat #QuickFolders-FoldersBox toolbarb
 /* Toolbar Buttons */
 
 #QuickFolders-Toolbar.quickfolders-toolbarbuttons toolbarbutton {
-/*
-  -moz-appearance: none !important;
-*/
   height: 1.65em !important;
   min-height: 24px !important;
 }
@@ -246,64 +247,6 @@ toolbarbutton#QuickFoldersCurrentFolder {
   width: auto !important;
   height: auto !important;
   max-width: 16px !important;
-}
-
-/* Options Dialog */
-
-prefwindow#qf-options:-moz-lwtheme {
-  background-image: var(--lwt-header-image);
-  color: var(--lwt-text-color);
-}
-
-#qf-options-header label {
-  font-family: sans-serif;
-  text-shadow: none !important;
-}
-
-#qf-options-header:-moz-lwtheme-darktext label {
-  filter: url("chrome://global/skin/lwtheme.svg#invert");
-}
-
-#qf-options-header:not(:-moz-lwtheme) label {
-  color: -moz-dialogtext !important;
-}
-
-#qf-options-header-description {
-  border: 1px solid transparent;
-}
-
-#qf-options-prefpane #qf-header-container:-moz-lwtheme,
-#qf-flat-toolbar.quickfolders-flat:-moz-lwtheme,
-#qf-StandardColors {
-  background: none !important;
-}
-
-#qf-flat-toolbar #coloredtabs-label,
-#qf-flat-toolbar checkbox {
-  color: -moz-Fieldtext !important;
-}
-
-#advancedConfig #mailCommandsCustomize {
-  min-width: 18em;
-}
-
-#QuickFolders-Options-Tabbox tab {
-  color: -moz-Dialogtext;
-}
-
-#QuickFolders-Panels {
-  color: -moz-Fieldtext;
-}
-
-#QuickFolders-Panels dropmarker {
-/*
-  list-style-image: url("chrome://phoenityIcons/skin/icons/arrow/arrow-down.svg");
-*/
-  opacity: 1;
-}
-
-#QuickFolders-Panels #currentFolderCustomize {
-  background-color: transparent;
 }
 
 /* Folder Icons */

@@ -1,4 +1,5 @@
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+@namespace html "http://www.w3.org/1999/xhtml";
 
 #mail-toolbox > toolbar #toggleQuotes,
 #navigation-toolbox > toolbar #toggleQuotes,

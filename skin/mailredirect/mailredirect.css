@@ -2,10 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
  
-#msgMailRedirectWindow:-moz-lwtheme {
-  background-repeat: repeat-y;
-}
-
 #hdrMailredirectButton,
 #mailredirect-toolbarbutton,
 #mailredirect-toolbarbutton:hover,
@@ -22,22 +18,13 @@ toolbar[iconsize="small"] #mailredirect-toolbarbutton[disabled="true"] {
   -moz-image-region: rect(0 16px 16px 0) !important;
 }
 
-#bounce-toolbox:not(:-moz-lwtheme) {
-  border-bottom: none;
+#bounceMailsLabel {
+  color: WindowText;
+  text-shadow: none;
 }
 
-#mailredirect-toolbar-menubar #mail-menubar {
-  padding: 0 !important;
-}
-
-#bounceContentBox {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-#bounceTree {
-  -moz-appearance: none;
-  border-top: 1px solid rgba(24, 24, 24, .32);
+#threadTree {
+  text-shadow: none;
 }
 
 /* ..... subject column, mail ..... */

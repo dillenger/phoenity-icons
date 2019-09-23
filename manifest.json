@@ -2,11 +2,14 @@
   "manifest_version": 2,
   "name": "Phoenity Icons",
   "description": "Phoenity icons for Thunderbird",
-  "version": "2.2",
+  "version": "2.4",
   "author": "Dillinger",
   "homepage_url": "https://addons.thunderbird.net/en-US/thunderbird/addon/phoenity-icons/",
-  "legacy": {
-    "type": "xul"
+  "legacy" : {
+    "options" : {
+      "page" : "chrome://phoenityIcons/content/aboutIcons.xul",
+      "open_in_tab" : false
+    }
   },
   "applications": {
     "gecko": {

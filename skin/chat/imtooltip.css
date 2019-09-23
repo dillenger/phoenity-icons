@@ -4,6 +4,9 @@
 
 @import url("chrome://phoenityIcons/skin/chat/status.css");
 
+@namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+@namespace html "http://www.w3.org/1999/xhtml";
+
 .displayNameMessageBox {
   margin-left: 4px;
   margin-top: 2px;
