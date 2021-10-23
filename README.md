@@ -1,4 +1,4 @@
-# icons-dillinger
+# phoenity-icons
 About this Add-on:
 
 This is a (limited) replacement for the Phoenity Shredder theme.
