@@ -1,0 +1,54 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== messenger.css ==================================================
+  == Styles shared throughout the Messenger application.
+  ======================================================================= */
+
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ::::: online/offline icons ::::: */
+
+#offline-status[offline="true"] {
+  list-style-image: url("./icons/offline.png");
+}
+
+#offline-status {
+  list-style-image: url("./icons/online.png");
+}
+
+/* ::::: column picker :::::  */
+
+.treecol-image .tree-columnpicker-icon {
+  list-style-image: url("chrome://global/skin/icons/columnpicker.svg");
+}
+
+/* Address Book menuitem icons */
+
+.abMenuItem[AddrBook="true"] {
+  list-style-image: url("chrome://PhoenityIcons/content/skin/addressbook/icons/addrbook.png");
+}
+
+.abMenuItem[MailList="true"] {
+  list-style-image: url("chrome://PhoenityIcons/content/skin/addressbook/icons/ablist.png");
+}
+
+.abMenuItem[AddrBook="true"][IsRemote="true"] {
+  list-style-image: url("chrome://PhoenityIcons/content/skin/addressbook/icons/remote-addrbook.png");
+}
+
+.abMenuItem[AddrBook="true"][IsRemote="true"][IsSecure="true"] {
+  list-style-image: url("chrome://PhoenityIcons/content/skin/addressbook/icons/secure-remote-addrbook.png");
+}
+
+/* UI Density customization */
+
+:root[uidensity="compact"] treechildren::-moz-tree-row {
+  min-height: 1.5rem !important;
+}
+
+:root[uidensity="compact"] treechildren::-moz-tree-row(multiline) {
+  min-height: 3.0rem !important;
+}

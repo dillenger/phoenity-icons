@@ -1,0 +1,13 @@
+[
+  {
+    "namespace": "phoenityIconsApi",
+    "functions": [
+      {
+        "name": "phoenityIcons",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      }
+    ]
+  }
+]

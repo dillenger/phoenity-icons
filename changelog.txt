@@ -1,5 +1,25 @@
 Changelog for Phoenity Icons
 
+3.8
+Fixed some small icons appearing slightly blurred.
+Fixed some CardBook toolbar icons.
+Improved support for density, fixed Betterbird multiline appearance.
+Set maximum version to Thunderbird 107.
+
+3.7
+Fixed icons sometimes not showing on startup by backing out a fix for TB 102.
+
+3.6
+Removed some more obsolete icons and CSS rules.
+Fixed missing Chat button icon in separate message windows.
+
+3.5
+Set minimum version to Thunderbird 91.
+Set maximum version to Thunderbird 103.
+Removed some obsolete CSS rules.
+Fixed missing Chat button icon on Thunderbird 102.
+Removed obsolete version checking.
+
 3.4
 Fixed min/max/close buttons for Thunderbird 91 on Linux.
 Fixed Today Pane button for Thunderbird 91.
@@ -8,7 +28,7 @@ Fixed Today Pane button for Thunderbird 91.
 Fixed minimum row height for Thunderbird 91.
 
 3.2
-Improved support for Cardbook, Cardbook toolbar now uses fixed icon size.
+Improved support for CardBook, CardBook toolbar now uses fixed icon size.
 Improved format toolbar button icons, added Remove Text Styling button.
 Improved support for large & small icons, increased small icon size.
 
@@ -18,8 +38,8 @@ Updated WindowListener API to 1.56, this fixes the icons for Thunderbird 91.
 3.0
 First release for Thunderbird 78, migrated using the WindowListener API.
 Restored the icon size option in the "Customize Toolbar" dialogs.
-Supports some extensions (Cardbook, uBlockOrigin, Mail Redirect).
-Icon size is not persistent for all toolbars (Cardbook).
+Supports some extensions (CardBook, uBlockOrigin, Mail Redirect).
+Icon size is not persistent for all toolbars (CardBook).
 Supports more extensions (Message Header Toolbar Customize, Simple Mail Redirection).
 
 2.9
@@ -57,7 +77,7 @@ Improved support for QuickFolders.
 Fixed the caption buttons placeholder when hiding the Menu Bar on Linux.
 Improved support for Mail Redirect.
 Added about Phoenity Icons dialog.
-Added support for Cardbook (toolbar & list icons).
+Added support for CardBook (toolbar & list icons).
 Improved support for large & small icons.
 Added icons for some more dialogs.
 
