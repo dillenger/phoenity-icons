@@ -1,10 +1,11 @@
 Changelog for Phoenity Icons
 
 3.8
+Set minimum version to Thunderbird 102.
+Set maximum version to Thunderbird 107.
 Fixed some small icons appearing slightly blurred.
 Fixed some CardBook toolbar icons.
 Improved support for density, fixed Betterbird multiline appearance.
-Set maximum version to Thunderbird 107.
 
 3.7
 Fixed icons sometimes not showing on startup by backing out a fix for TB 102.
