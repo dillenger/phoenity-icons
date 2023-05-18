@@ -61,34 +61,28 @@
 }
 
 #qfb-unread {
-  list-style-image: url("./icons/quickfilterbar.png");
-  -moz-image-region: rect(0px, 16px, 16px, 0px);
+  list-style-image: url("./icons/qfb-unread.png");
 }
 
 #qfb-starred {
-  list-style-image: url("./icons/quickfilterbar.png");
-  -moz-image-region: rect(0px, 32px, 16px, 16px);
+  list-style-image: url("./icons/qfb-starred.png");
 }
 
 .qfb-starred-nostar {
-  list-style-image: url("./icons/quickfilterbar.png");
-  -moz-image-region: rect(0px, 32px, 16px, 16px);
-  filter: url("./icons/extensions.svg#greyscale");
+  list-style-image: url("./icons/qfb-starred.png");
+  filter: url("./icons/greyscale.svg#greyscale");
 }
 
 #qfb-inaddrbook {
-  list-style-image: url("./icons/quickfilterbar.png");
-  -moz-image-region: rect(0px, 48px, 16px, 32px);
+  list-style-image: url("./icons/qfb-inaddrbook.png");
 }
 
 #qfb-tags {
-  list-style-image: url("./icons/quickfilterbar.png");
-  -moz-image-region: rect(0px, 64px, 16px, 48px);
+  list-style-image: url("./icons/qfb-tags.png");
 }
 
 #qfb-attachment {
-  list-style-image: url("./icons/quickfilterbar.png");
-  -moz-image-region: rect(0px, 80px, 16px, 64px);
+  list-style-image: url("./icons/qfb-attachment.png");
 }
 
 #qfb-results-label {

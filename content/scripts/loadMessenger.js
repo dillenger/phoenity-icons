@@ -1,4 +1,4 @@
-var { Services } = ChromeUtils.import("resource://gre/modules/Services.jsm");
+var Services = globalThis.Services || ChromeUtils.import("resource://gre/modules/Services.jsm");
 
 const fileName = "messenger.css";
 
@@ -13,6 +13,8 @@ function onLoad(activatedWhileWindowOpen) {
     WL.injectCSS("chrome://PhoenityIcons/content/darwin/" + fileName);
   }
 
+  WL.injectCSS("chrome://PhoenityIcons/content/skin/icons.css");
+
   WL.injectCSS("chrome://PhoenityIcons/content/skin/primaryToolbar.css");
   WL.injectCSS("chrome://PhoenityIcons/content/skin/folderPane.css");
   WL.injectCSS("chrome://PhoenityIcons/content/skin/folderMenus.css");
@@ -24,10 +26,6 @@ function onLoad(activatedWhileWindowOpen) {
   WL.injectCSS("chrome://PhoenityIcons/content/skin/activity/activity.css");
 
   WL.injectCSS("chrome://PhoenityIcons/content/skin/messengercompose/messengercompose.css");
-  WL.injectCSS("chrome://PhoenityIcons/content/skin/addressbook/addressbook.css");
-  WL.injectCSS("chrome://PhoenityIcons/content/skin/addressbook/abContactsPanel.css");
-  WL.injectCSS("chrome://PhoenityIcons/content/skin/addressbook/abResultsPane.css");
-  WL.injectCSS("chrome://PhoenityIcons/content/skin/addressbook/cardDialog.css");
 
   WL.injectCSS("chrome://PhoenityIcons/content/skin/uBlockOrigin/uBlockOrigin.css");
   WL.injectCSS("chrome://PhoenityIcons/content/skin/cardbook/cardbook.css");
@@ -46,7 +44,8 @@ function msgListener () {
     let w = multimessage.contentWindow.wrappedJSObject;
     linkElement = w.document.createElement("link");
     linkElement.setAttribute("rel", "stylesheet");
-    linkElement.setAttribute("href", "chrome://PhoenityIcons/content/skin/primaryToolbar.css");
+    linkElement.setAttribute("href", "chrome://PhoenityIcons/content/skin/icons.css");
+    //linkElement.setAttribute("href", "chrome://PhoenityIcons/content/skin/primaryToolbar.css");
     w.document.documentElement.appendChild(linkElement);
   }
 }

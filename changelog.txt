@@ -1,5 +1,12 @@
 Changelog for Phoenity Icons
 
+3.9
+Removed some obsolete address book styles & icons.
+Split icon images into separate images for all icons.
+Added support for Supernova.
+Added more button and menu item icons.
+Set maximum version to Thunderbird 115.
+
 3.8
 Set minimum version to Thunderbird 102.
 Set maximum version to Thunderbird 107.

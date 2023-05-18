@@ -16,14 +16,7 @@
   margin-inline-end: 0;
   -moz-stack-sizing: ignore;
   list-style-image: url("./icons/Search-close.png");
-  -moz-image-region: rect(0, 16px, 16px, 0);
   box-shadow: none !important;
-}
-.closeConversationButton:hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
-}
-.closeConversationButton:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 .userIcon[src=""] {
@@ -55,7 +48,6 @@
 
 #searchResultConv > .prplBuddyIcon > .protoIcon {
   list-style-image: url("./icons/Search-glass.png");
-  -moz-image-region: rect(0, 16px, 16px, 0);
 }
 
 #logTree,
@@ -107,33 +99,27 @@
 }
 
 #button-add-buddy {
-  list-style-image: url("./icons/chat-toolbar.png");
-  -moz-image-region: rect(0px 22px 22px 0px);
+  list-style-image: url("./chat/button-add-buddy.png");
 }
 
 toolbar[iconsize="small"] #button-add-buddy {
-  list-style-image: url("./icons/chat-toolbar-small.png");
-  -moz-image-region: rect(0px 16px 16px 0px);
+  list-style-image: url("./chat/button-add-buddy-small.png");
 }
 
 #button-join-chat {
-  list-style-image: url("./icons/chat-toolbar.png");
-  -moz-image-region: rect(0px 44px 22px 22px);
+  list-style-image: url("./chat/button-join-chat.png");
 }
 
 toolbar[iconsize="small"] #button-join-chat {
-  list-style-image: url("./icons/chat-toolbar-small.png");
-  -moz-image-region: rect(0px 32px 16px 16px);
+  list-style-image: url("./chat/button-join-chat-small.png");
 }
 
 #button-chat-accounts {
-  list-style-image: url("./icons/chat-toolbar.png");
-  -moz-image-region: rect(0px 66px 22px 44px);
+  list-style-image: url("./chat/button-chat-accounts.png");
 }
 
 toolbar[iconsize="small"] #button-chat-accounts {
-  list-style-image: url("./icons/chat-toolbar-small.png");
-  -moz-image-region: rect(0px 48px 16px 32px);
+  list-style-image: url("./chat/button-chat-accounts-small.png");
 }
 
 #chat-status-selector dropmarker .dropmarker-icon {
@@ -146,14 +132,12 @@ toolbar[iconsize="small"] #button-chat-accounts {
 #imStatusAvailable,
 #appmenu_imStatusAvailable,
 richlistitem[state="connected"] .accountStateIcon {
-  list-style-image: url("./icons/status.png");
-  -moz-image-region: rect(0px 16px 16px 0px);
+  list-style-image: url("./chat/available-16.png");
 }
 
 #statusTypeIcon[status="idle"],
 .statusTypeIcon[status="idle"] {
-  list-style-image: url("./icons/status.png");
-  -moz-image-region: rect(0px 32px 16px 16px);
+  list-style-image: url("./chat/idle-16.png");
 }
 
 #statusTypeIcon[status="offline"],
@@ -164,8 +148,7 @@ richlistitem[state="connected"] .accountStateIcon {
 #imStatusOffline,
 #appmenu_imStatusOffline,
 richlistitem[state="disconnected"] .accountStateIcon {
-  list-style-image: url("./icons/status.png");
-  -moz-image-region: rect(0px 48px 16px 32px);
+  list-style-image: url("./chat/offline-16.png");
 }
 
 #statusTypeIcon[status="unavailable"],
@@ -175,8 +158,7 @@ richlistitem[state="disconnected"] .accountStateIcon {
 .statusTypeIcon[status="away"],
 #imStatusUnavailable,
 #appmenu_imStatusUnavailable {
-  list-style-image: url("./icons/status.png");
-  -moz-image-region: rect(0px 64px 16px 48px);
+  list-style-image: url("./chat/away-16.png");
 }
 
 toolbar[mode="text"] #statusTypeIcon .toolbarbutton-icon {

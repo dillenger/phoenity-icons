@@ -13,32 +13,26 @@ treecol.threadColumnHeader {
 
 treechildren::-moz-tree-image(threadCol, container) {
   list-style-image: url("./icons/thread.png");
-  -moz-image-region: rect(0 16px 16px 0);
 }
 
 treechildren::-moz-tree-image(threadCol, container, new) {
-  list-style-image: url("./icons/thread.png");
-  -moz-image-region: rect(16px 16px 32px 0);
+  list-style-image: url("./icons/thread-hasnew.png");
 }
 
 treechildren::-moz-tree-image(threadCol, watch) {
-  list-style-image: url("./icons/thread.png");
-  -moz-image-region: rect(0 32px 16px 16px);
+  list-style-image: url("./icons/thread-watched.png");
 }
 
 treechildren::-moz-tree-image(threadCol, watch, new) {
-  list-style-image: url("./icons/thread.png");
-  -moz-image-region: rect(16px 32px 32px 16px);
+  list-style-image: url("./icons/thread-watched-hasnew.png");
 }
 
 treechildren::-moz-tree-image(threadCol, ignoreSubthread) {
-  list-style-image: url("./icons/thread.png");
-  -moz-image-region: rect(16px 48px 32px 32px);
+  list-style-image: url("./icons/subthread-ignored.png");
 }
 
 treechildren::-moz-tree-image(threadCol, ignore) {
-  list-style-image: url("./icons/thread.png");
-  -moz-image-region: rect(0 48px 16px 32px);
+  list-style-image: url("./icons/thread-ignored.png");
 }
 
 /* ..... read column ..... */
@@ -88,7 +82,7 @@ treechildren::-moz-tree-image(flaggedCol) {
 }
 
 treechildren::-moz-tree-image(flaggedCol, flagged) {
-  list-style-image: url("./icons/star.png");
+  list-style-image: var(--icon-star);
   margin-inline-start: 1px;
 }
 
@@ -115,93 +109,88 @@ treechildren::-moz-tree-image(junkStatusCol, notjunk) {
 
 treechildren::-moz-tree-image(correspondentCol, incoming) {
   list-style-image: url("./icons/message-incoming.png");
-  -moz-image-region: rect(0 16px 16px 0);
 }
 
 treechildren::-moz-tree-image(correspondentCol, outgoing) {
   list-style-image: url("./icons/message-outgoing.png") !important;
-  -moz-image-region: rect(0 16px 16px 0);
 }
 
 /* ..... subject column ..... */
 
 treechildren::-moz-tree-image(subjectCol) {
   -moz-margin-end: 4px;
-  list-style-image: url("./icons/message.png");
-  -moz-image-region: rect(0 16px 16px 0);
+  list-style-image: url("./icons/message-mail.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, read) {
-  -moz-image-region: rect(16px 16px 32px 0);
+  list-style-image: url("./icons/message-mail-read.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, forwarded) {
-  -moz-image-region: rect(0 48px 16px 32px);
+  list-style-image: url("./icons/message-mail-forwarded.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, read, forwarded) {
-  -moz-image-region: rect(16px 48px 32px 32px);
+  list-style-image: url("./icons/message-mail-read-forwarded.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, replied) {
-  -moz-image-region: rect(0 32px 16px 16px);
+  list-style-image: url("./icons/message-mail-replied.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, read, replied) {
-  -moz-image-region: rect(16px 32px 32px 16px);
+  list-style-image: url("./icons/message-mail-read-replied.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, replied, forwarded) {
-  -moz-image-region: rect(0 64px 16px 48px);
+  list-style-image: url("./icons/message-mail-replied-forwarded.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, read, replied, forwarded) {
-  -moz-image-region: rect(16px 64px 32px 48px);
+  list-style-image: url("./icons/message-mail-read-replied-forwarded.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, new) {
-  -moz-image-region: rect(0 96px 16px 80px);
+  list-style-image: url("./icons/message-mail-new.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, news) {
-  -moz-image-region: rect(32px 16px 48px 0);
+  list-style-image: url("./icons/message-news-grey.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, news, forwarded) {
-  -moz-image-region: rect(32px 48px 48px 32px);
+  list-style-image: url("./icons/message-news-forwarded.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, news, replied) {
-  -moz-image-region: rect(32px 32px 48px 16px);
+  list-style-image: url("./icons/message-news-replied.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, news, replied, forwarded) {
-  -moz-image-region: rect(32px 64px 48px 48px);
+  list-style-image: url("./icons/message-news-replied-forwarded.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, news, new) {
-  -moz-image-region: rect(32px 96px 48px 80px);
+  list-style-image: url("./icons/message-news-new.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, rss) {
   list-style-image: url("./icons/rss-feed.png");
-  -moz-image-region: rect(0 16px 16px 0);
 }
 
 treechildren::-moz-tree-image(subjectCol, rss, forwarded) {
-  -moz-image-region: rect(0 48px 16px 32px);
+  list-style-image: url("./icons/rss-feed-forwarded.png");
 }
 
 treechildren::-moz-tree-image(subjectCol, rss, new) {
-  -moz-image-region: rect(0 32px 16px 16px);
+  list-style-image: url("./icons/rss-feed-new.png");
 }
 
 /* IMPORTANT: make sure the imap-deleted column always comes after the replied/forwarded style rules.
    This ensures that we show that the message is marked as deleted over status information. */
 
 treechildren::-moz-tree-image(subjectCol, imapdeleted) {
-  list-style-image: url("./icons/message.png");
-  -moz-image-region: rect(0 80px 16px 64px);
+  list-style-image: url("./icons/message-imapdeleted.png");
 }
 
 #sizeCol,

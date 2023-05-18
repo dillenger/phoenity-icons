@@ -2,15 +2,6 @@ messenger.WindowListener.registerChromeUrl([
     ["content",  "PhoenityIcons", "content/"]
 ]);
 
-
-messenger.WindowListener.registerWindow(
-    "chrome://messenger/content/addressbook/addressbook.xhtml",
-    "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
-
-messenger.WindowListener.registerWindow(
-    "chrome://messenger/content/addressbook/abContactsPanel.xhtml",
-    "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
-
 messenger.WindowListener.registerWindow(
     "chrome://messenger/content/messengercompose/messengercompose.xhtml",
     "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
@@ -28,15 +19,15 @@ messenger.WindowListener.registerWindow(
     "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
 
 messenger.WindowListener.registerWindow(
-    "chrome://messenger/content/activity.xhtml",
-    "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
-
-messenger.WindowListener.registerWindow(
-    "chrome://messenger/content/subscribe.xhtml",
-    "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
-
-messenger.WindowListener.registerWindow(
     "chrome://messenger/content/SearchDialog.xhtml",
+    "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
+
+messenger.WindowListener.registerWindow(
+    "chrome://messenger/content/about3Pane.xhtml",
+    "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
+
+messenger.WindowListener.registerWindow(
+    "chrome://messenger/content/aboutMessage.xhtml",
     "chrome://PhoenityIcons/content/scripts/loadMessenger.js");
 
 messenger.WindowListener.startListening();

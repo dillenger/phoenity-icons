@@ -8,7 +8,7 @@
 #mailredirect-toolbarbutton[disabled="true"],
 #simplemailredirection_ggbs_de-browserAction-toolbarbutton,
 #simplemailredirection_ggbs_de-messageDisplayAction-toolbarbutton {
-  list-style-image: url("mailredirect-large.png") !important;
+  list-style-image: var(--icon-redirect) !important;
 }
 
 #bounceMailsLabel {
@@ -22,53 +22,52 @@
 
 /* ..... subject column, mail ..... */
 
-tree > treechildren::-moz-tree-image(subjectCol, kw-redirected) {
-  list-style-image: url("mailredirect-small.png");
-  -moz-image-region: rect(0 16px 16px 0);
+tree > treechildren::-moz-tree-image(subjectCol, redirected) {
+  list-style-image: url("mail-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, read, kw-redirected) {
-  -moz-image-region: rect(16px 16px 32px 0);
+tree > treechildren::-moz-tree-image(subjectCol, read, redirected) {
+  list-style-image: url("mail-read-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, forwarded, kw-redirected) {
-  -moz-image-region: rect(0 32px 16px 16px);
+tree > treechildren::-moz-tree-image(subjectCol, forwarded, redirected) {
+  list-style-image: url("mail-forwarded-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, forwarded, read, kw-redirected) {
-  -moz-image-region: rect(16px 32px 32px 16px);
+tree > treechildren::-moz-tree-image(subjectCol, forwarded, read, redirected) {
+  list-style-image: url("mail-read-forwarded-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, replied, kw-redirected) {
-  -moz-image-region: rect(0 48px 16px 32px);
+tree > treechildren::-moz-tree-image(subjectCol, replied, redirected) {
+  list-style-image: url("mail-replied-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, replied, read, kw-redirected) {
-  -moz-image-region: rect(16px 48px 32px 32px);
+tree > treechildren::-moz-tree-image(subjectCol, replied, read, redirected) {
+  list-style-image: url("mail-read-replied-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, replied, forwarded, kw-redirected) {
-  -moz-image-region: rect(0 64px 16px 48px);
+tree > treechildren::-moz-tree-image(subjectCol, replied, forwarded, redirected) {
+  list-style-image: url("mail-replied-forwarded-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, replied, forwarded, read, kw-redirected) {
-  -moz-image-region: rect(16px 64px 32px 48px);
+tree > treechildren::-moz-tree-image(subjectCol, replied, forwarded, read, redirected) {
+  list-style-image: url("mail-read-replied-forwarded-redirected.png");
 }
 
 /* ..... subject column, news ..... */
 
-tree > treechildren::-moz-tree-image(subjectCol, news, kw-redirected) {
-  -moz-image-region: rect(0 80px 16px 64px);
+tree > treechildren::-moz-tree-image(subjectCol, news, redirected) {
+  list-style-image: url("news-redirected.png");
 }
 
-reechildren::-moz-tree-image(subjectCol, news, forwarded, kw-redirected) {
-  -moz-image-region: rect(16px 80px 32px 64px);
+reechildren::-moz-tree-image(subjectCol, news, forwarded, redirected) {
+  list-style-image: url("news-forwarded-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, news, replied, kw-redirected) {
-  -moz-image-region: rect(0 96px 16px 80px);
+tree > treechildren::-moz-tree-image(subjectCol, news, replied, redirected) {
+  list-style-image: url("news-replied-redirected.png");
 }
 
-tree > treechildren::-moz-tree-image(subjectCol, news, replied, forwarded, kw-redirected) {
-  -moz-image-region: rect(16px 96px 32px 80px);
+tree > treechildren::-moz-tree-image(subjectCol, news, replied, forwarded, redirected) {
+  list-style-image: url("news-replied-forwarded-redirected.png");
 }

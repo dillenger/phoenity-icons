@@ -37,243 +37,171 @@
   list-style-image: url("button-security.png");
 }
 
+#button-encryption {
+  list-style-image: var(--icon-key);
+}
+
+#button-signing {
+  list-style-image: url("button-signing.png");
+}
+
 #button-save {
   list-style-image: url("button-save.png") !important;
 }
 
 #quoteButton {
-  list-style-image: url("quoteButton.png");
+  list-style-image: var(--icon-quote);
 }
 
 #cut-button {
-  list-style-image: url("cut-button.png");
+  list-style-image: var(--icon-cut);
 }
 
 #copy-button {
-  list-style-image: url("copy-button.png");
+  list-style-image: var(--icon-copy);
 }
 
 #paste-button {
-  list-style-image: url("paste-button.png");
+  list-style-image: var(--icon-paste);
 }
 
 #button-returnReceipt {
-  list-style-image: url("button-returnReceipt.png");
+  list-style-image: var(--icon-receipt);
 }
 
 /* :::: autocomplete icons :::: */
 
 .autocomplete-richlistitem[type="local-abook"] > .ac-site-icon {
-  list-style-image: url("../addressbook/icons/addrbook.png");
+  list-style-image: url("addrbook.png");
 }
 
 .autocomplete-richlistitem[type="remote-abook"] > .ac-site-icon {
-  list-style-image: url("../addressbook/icons/remote-addrbook.png");
+  list-style-image: url("remote-addrbook.png");
 }
 
 .autocomplete-richlistitem[type="remote-err"] > .ac-site-icon {
-  list-style-image: url("../addressbook/icons/remote-addrbook-error.png");
+  list-style-image: url("remote-addrbook-error.png");
 }
 
 /* ::::: addressing widget ::::: */
 
-.person-icon {
-  margin: 3px;
-  list-style-image: url("../addressbook/icons/abcard.png");
+/*
+treechildren::-moz-tree-image(GeneratedName) {
+  margin-inline-end: 2px;
+  list-style-image: url("abcard.png");
 }
+
+treechildren::-moz-tree-image(GeneratedName, MailList) {
+  margin-inline-end: 2px;
+  list-style-image: url("ablist.png");
+}
+*/
 
 /* ::::: format toolbar ::::: */
 
 #FormatToolbar > toolbarbutton {
-  list-style-image: url("format-buttons.png");
   opacity: .85;
 }
 
 #AbsoluteFontSizeButton {
-  -moz-image-region: rect(0px 320px 16px 304px);
+  list-style-image: url("font-size.png");
 }
 
 #DecreaseFontSizeButton {
-  -moz-image-region: rect(0px 16px 16px 0px);
+  list-style-image: url("decrease.png");
 }
 
 #IncreaseFontSizeButton {
-  -moz-image-region: rect(0px 32px 16px 16px);
+  list-style-image: url("increase.png");
 }
 
 #boldButton {
-  -moz-image-region: rect(0px 48px 16px 32px);
+  list-style-image: url("bold.png");
 }
 
 #italicButton {
-  -moz-image-region: rect(0px 64px 16px 48px);
+  list-style-image: url("italic.png");
 }
 
 #underlineButton {
-  -moz-image-region: rect(0px 80px 16px 64px);
+  list-style-image: url("underline.png");
 }
 
 #removeStylingButton {
-  -moz-image-region: rect(0px 336px 16px 320px);
+  list-style-image: url("remove-style.png");
 }
 
 #ulButton {
-  -moz-image-region: rect(0px 96px 16px 80px);
+  list-style-image: url("bulleted.png");
 }
 
 #olButton {
-  -moz-image-region: rect(0px 112px 16px 96px);
+  list-style-image: url("numbered.png");
 }
 
 #outdentButton {
-  -moz-image-region: rect(0px 144px 16px 128px);
+  list-style-image: url("outdent.png");
 }
 
 #indentButton {
-  -moz-image-region: rect(0px 128px 16px 112px);
+  list-style-image: url("indent.png");
 }
 
 #AlignPopupButton {
-  -moz-image-region: rect(0px 160px 16px 144px);
+  list-style-image: url("align-left.png");
 }
 
 #InsertPopupButton {
-  -moz-image-region: rect(0px 256px 16px 240px);
+  list-style-image: url("insert.png");
 }
 
 #smileButtonMenu {
-  -moz-image-region: rect(0px 304px 16px 288px);
+  list-style-image: url("smile.png");
 }
 
 /* ..... align menu ..... */
 
 
 #AlignLeftItem, #AlignPopupButton[state="left"] {
-  list-style-image: url("format-buttons.png");
-  -moz-image-region: rect(0px 160px 16px 144px);
+  list-style-image: url("align-left.png");
 }
 
 #AlignCenterItem, #AlignPopupButton[state="center"] {
-  list-style-image: url("format-buttons.png");
-  -moz-image-region: rect(0px 176px 16px 160px);
+  list-style-image: url("align-center.png");
 }
 
 #AlignRightItem, #AlignPopupButton[state="right"] {
-  list-style-image: url("format-buttons.png");
-  -moz-image-region: rect(0px 192px 16px 176px);
+  list-style-image: url("align-right.png");
 }
 
 #AlignJustifyItem, #AlignPopupButton[state="justify"] {
-  list-style-image: url("format-buttons.png");
-  -moz-image-region: rect(0px 208px 16px 192px);
+  list-style-image: url("align-justify.png");
 }
 
 /* ..... insert menu ..... */
 
-#InsertPopup > menuitem {
-  list-style-image: url("format-buttons.png");
+#InsertPopupButton {
+  list-style-image: url("image.png");
 }
 
 #InsertLinkItem {
-  -moz-image-region: rect(0px 224px 16px 208px);
+  list-style-image: url("link.png");
 }
 
 #InsertAnchorItem {
-  -moz-image-region: rect(0px 240px 16px 224px);
+  list-style-image: url("anchor.png");
 }
 
 #InsertImageItem {
-  -moz-image-region: rect(0px 256px 16px 240px);
+  list-style-image: url("image.png");
 }
 
 #InsertHRuleItem {
-  -moz-image-region: rect(0px 272px 16px 256px);
+  list-style-image: url("hrule.png");
 }
 
 #InsertTableItem {
-  -moz-image-region: rect(0px 288px 16px 272px);
-}
-
-/* ..... smiley menu ..... */
-
-#smileySmile > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-smile.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyFrown > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-frown.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyWink > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-wink.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyTongue > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-tongue-out.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyLaughing > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-laughing.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyEmbarassed > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-embarassed.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyUndecided > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-undecided.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileySurprise > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-surprised.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyKiss > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-kiss.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyYell > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-yell.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyCool > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-cool.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyMoney > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-money-mouth.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyFoot > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-foot-in-mouth.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyInnocent > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-innocent.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileyCry > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-cry.png");
-  -moz-image-region: auto; /* cut off inheritance */
-}
-
-#smileySealed > .menu-iconic-left {
-  list-style-image: url("chrome://communicator/skin/icons/smileys/smiley-sealed.png");
-  -moz-image-region: auto; /* cut off inheritance */
+  list-style-image: url("table.png");
 }
 
 /* ..... fg/bg color picker ..... */

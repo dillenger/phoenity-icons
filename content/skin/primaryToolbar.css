@@ -2,9 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@import url("./icons.css");
+
 @namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
-
 
 /* ===== primaryToolbar.css ===== */
 
@@ -66,11 +67,15 @@
   }
 }
 
+dropmarker > .dropmarker-icon {
+  -moz-image-region: auto;
+}
+
 /* restore the small icons checkbox in Customize window */
 #smallicons {
-  display: initial;
+  display: flex;
 }
-/* don't restore the small icons checkbox for the cardbook toolbar */
+/* hide the small icons checkbox for the cardbook toolbar */
 [toolboxId="cardbook-toolbox"] #smallicons {
   display: none;
 }
@@ -99,13 +104,13 @@ toolbox[labelalign="bottom"] toolbar[mode="full"] .toolbarbutton-1[type="menu"] 
 }
 
 .toolbarbutton-1 .toolbarbutton-icon {
-  width: 26px;
-  height: 26px;
+  width: calc(var(--icon-size) + 6px);
+  height: calc(var(--icon-size) + 6px);
 }
 
 #mail-bar3 .toolbarbutton-1 .toolbarbutton-icon {
-  min-width: 26px;
-  min-height: 26px;
+  min-width: calc(var(--icon-size) + 6px);
+  min-height: calc(var(--icon-size) + 6px);
 }
 
 toolbar[mode="icons"] .toolbarbutton-icon[label]:not([label=""]),
@@ -214,7 +219,7 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
 }
 
 #mhcStar {
-  list-style-image: url("./icons/star.png") !important;
+  list-style-image: var(--icon-star) !important;
 }
 
 #mhcTag,
@@ -287,18 +292,18 @@ toolbar[iconsize="small"] .toolbarbutton-1 .toolbarbutton-icon,
 #mail-toolbar-menubar2 .toolbarbutton-1 .toolbarbutton-icon,
 #header-view-toolbar .toolbarbutton-1 .toolbarbutton-icon,
 #attachment-view-toolbar .toolbarbutton-1 .toolbarbutton-icon {
-  width: 18px;
-  height: 18px;
+  width: calc(var(--icon-size) - 2px);
+  height: calc(var(--icon-size) - 2px);
 }
 
 #mail-bar3[iconsize="small"] .toolbarbutton-1 .toolbarbutton-icon {
-  min-width: 20px;
-  min-height: 20px;
+  min-width: var(--icon-size);
+  min-height: var(--icon-size);
 }
 
 #mail-bar3[iconsize="small"] .button-appmenu .toolbarbutton-icon {
-  min-width: 18px;
-  min-height: 18px;
+  min-width: calc(var(--icon-size) - 2px);
+  min-height: calc(var(--icon-size) - 2px);
 }
 
 #quick-filter-bar-expando .toolbarbutton-1 .toolbarbutton-icon {
@@ -309,8 +314,44 @@ toolbar[iconsize="small"] .button-appmenu {
   list-style-image: url("./icons/button-appmenu-small.png");
 }
 
-/* ::::: end small primary toolbar buttons ::::: */
+/* ::::: unified toolbar buttons ::::: */
 
-dropmarker > .dropmarker-icon {
-  -moz-image-region: auto;
+:root,
+.button {
+  --icon-size: 20px;
+}
+
+:root[uidensity="compact"],
+[uidensity="compact"] .button {
+  --icon-size: 16px;
+}
+
+:root[uidensity="touch"],
+[uidensity="touch"] .button {
+  --icon-size: 24px;
+}
+
+#unifiedToolbar .toolbarbutton-1 .toolbarbutton-icon {
+  width: calc(var(--icon-size) + 2px);
+  height: calc(var(--icon-size) + 2px);
+}
+
+#unifiedToolbar .toolbar-button .toolbarbutton-icon,
+#unifiedToolbar .unified-toolbar-button .button-icon,
+#unified-toolbar-customization-tab-mail::part(icon),
+#unified-toolbar-customization-tab-addressbook::part(icon),
+#unified-toolbar-customization-tab-calendar::part(icon),
+#unified-toolbar-customization-tab-tasks::part(icon),
+#unified-toolbar-customization-tab-chat::part(icon),
+#unified-toolbar-customization-tab-settings::part(icon) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+#unifiedToolbar .search-bar {
+  max-width: 400px;
+}
+
+#unifiedToolbarContent.unified-toolbar {
+  padding-inline-start: 0px;
 }
