@@ -39,8 +39,8 @@
   --icon-file: url("chrome://phoenityicons/content/skin/icons/button-file.png");
   --icon-filter: url("chrome://phoenityicons/content/skin/icons/button-quickFilter.png");
   --icon-forward: url("chrome://phoenityicons/content/skin/icons/button-forward.png");
-  --icon-globe: url("chrome://phoenityicons/content/skin/icons/globe.png");
-  --icon-globe-secure: url("chrome://phoenityicons/content/skin/icons/globe-secure.png");
+  --icon-globe: url("chrome://phoenityicons/content/skin/icons/server-nntp.png");
+  --icon-globe-secure: url("chrome://phoenityicons/content/skin/icons/server-secure-nntp.png");
   --icon-get-mail: url("chrome://phoenityicons/content/skin/icons/button-getmsg.png");
   --icon-handshake: url("chrome://phoenityicons/content/skin/icons/spanner.png");
   --icon-heart: url("chrome://phoenityicons/content/skin/icons/heart.png");
@@ -51,8 +51,8 @@
   --icon-layout: url("chrome://phoenityicons/content/skin/icons/layout.png");
   --icon-lock: url("chrome://phoenityicons/content/skin/icons/lock.png");
   --icon-lock-disabled: url("phoenityicons/content/skin/icons/lock-disabled.png");
-  --icon-mail: url("chrome://phoenityicons/content/skin/icons/mail.png");
-  --icon-mail-secure: url("chrome://phoenityicons/content/skin/icons/mail-secure.png");
+  --icon-mail: url("chrome://phoenityicons/content/skin/icons/server.png");
+  --icon-mail-secure: url("chrome://phoenityicons/content/skin/icons/server-secure.png");
   --icon-new-address-book: url("chrome://phoenityicons/content/skin/cardbook/abook_new.png");
   --icon-new-contact: url("chrome://phoenityicons/content/skin/chat/button-add-buddy.png");
   --icon-nav-down: url("chrome://phoenityicons/content/skin/icons/button-nextMsg.png");
@@ -64,7 +64,7 @@
   --icon-new-task: url("chrome://phoenityicons/content/skin/calendar/newtask-small.png");
   --icon-new-event: url("chrome://phoenityicons/content/skin/calendar/newevent-small.png");
   --icon-new-key: url("chrome://phoenityicons/content/skin/icons/new-key.png");
-  --icon-newsletter: url("chrome://phoenityicons/content/skin/icons/message-news.png");
+  --icon-newsletter: url("chrome://phoenityicons/content/skin/icons/nntp.png");
   --icon-new-mail: url("chrome://phoenityicons/content/skin/icons/button-newmsg.png");
   --icon-offline: url("chrome://phoenityicons/content/skin/icons/offline.png");
   --icon-online: url("chrome://phoenityicons/content/skin/icons/online.png");
@@ -72,7 +72,7 @@
   --icon-print: url("chrome://phoenityicons/content/skin/calendar/print.png");
   --icon-pencil: url("chrome://phoenityicons/content/skin/calendar/edit.png");
   --icon-paste: url("chrome://phoenityicons/content/skin/icons/paste.png");
-  --icon-pin: url("chrome://phoenityicons/content/skin/icons/pin_pinned");
+  --icon-pin: url("chrome://phoenityicons/content/skin/icons/pin_pinned.png");
   --icon-question: url("chrome://phoenityicons/content/skin/icons/question.png");
   --icon-quit: url("chrome://phoenityicons/content/skin/icons/error.png");
   --icon-quote: url("chrome://phoenityicons/content/skin/icons/quote.png");
@@ -86,10 +86,8 @@
   --icon-shield: url("chrome://phoenityicons/content/skin/icons/privacy.png");
   --icon-shortcut: url("chrome://phoenityicons/content/skin/icons/control.png");
   --icon-spaces-menu: url("chrome://phoenityicons/content/skin/icons/spaces-menu.png");
-  --icon-spam: url("chrome://phoenityicons/content/skin/icons/junk-folder.png");
   --icon-settings: url("chrome://phoenityicons/content/skin/icons/options.png");
   --icon-search: url("chrome://phoenityicons/content/skin/icons/Search-glass.png");
-  --icon-star: url("chrome://phoenityicons/content/skin/icons/star.png");
   --icon-sync: url("chrome://phoenityicons/content/skin/cardbook/reload.png");
   --icon-subthread-ignored: url("chrome://phoenityicons/content/skin/icons/subthread-ignored.png");
   --icon-tag: url("chrome://phoenityicons/content/skin/icons/button-tag.png");
@@ -132,6 +130,7 @@
   --icon-ribbon: url("chrome://messenger/skin/icons/new/compact/ribbon.svg");
   --icon-sort: url("chrome://messenger/skin/icons/new/compact/sort.svg");
   --icon-spelling: url("chrome://messenger/skin/icons/new/compact/spelling.svg");
+  --icon-star: url("chrome://phoenityicons/content/skin/icons/star.png");
   --icon-subtract-circle-sm: url("chrome://messenger/skin/icons/new/subtract-circle-sm.svg");
   --icon-template: url("chrome://messenger/skin/icons/new/compact/template.svg");
   --icon-tentative: url("chrome://messenger/skin/icons/new/compact/tentative.svg");
@@ -141,11 +140,45 @@
 */
 }
 
+li[data-server-type="rss"] {
+  --icon-rss: url("chrome://phoenityicons/content/skin/icons/server-rss.png");
+  --icon-folder: url("chrome://phoenityicons/content/skin/icons/rss.png");
+}
+
+#folderPane {
+  --icon-spam: url("chrome://phoenityicons/content/skin/icons/junk-folder.png");
+}
+
 .unified-toolbar-button,
 unified-toolbar-customization {
   --icon-nav-back: url("chrome://phoenityicons/content/skin/icons/button-goback.png");
   --icon-nav-forward: url("chrome://phoenityicons/content/skin/icons/button-goforward.png");
 }
+#qfb-sticky {
+  --icon-pin: url("chrome://phoenityicons/content/skin/icons/qfb/pin_pinned.png");
+}
+
+#qfb-unread {
+  --icon-unread: url("chrome://phoenityicons/content/skin/icons/qfb/qfb-unread.png");
+}
+
+#qfb-starred {
+  --icon-star: url("chrome://phoenityicons/content/skin/icons/qfb/qfb-starred.png");
+}
+
+#qfb-inaddrbook {
+  --icon-address-book: url("chrome://phoenityicons/content/skin/icons/qfb/qfb-inaddrbook.png");
+}
+
+#qfb-tags {
+  --icon-tag: url("chrome://phoenityicons/content/skin/icons/qfb/qfb-tags.png");
+}
+
+#qfb-attachment {
+  --icon-attachment: url("chrome://phoenityicons/content/skin/icons/qfb/qfb-attachment.png");
+}
+
+
 
 /* Large variations, touch, 24px */
 
