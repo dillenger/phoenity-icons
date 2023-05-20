@@ -29,7 +29,6 @@
   --icon-download: url("chrome://phoenityicons/content/skin/icons/SaveAs.png");
   --icon-extension: url("chrome://phoenityicons/content/skin/icons/button-addons.png");
   --icon-export: url("chrome://phoenityicons/content/skin/icons/export.png");
-  --icon-eye: url("chrome://phoenityicons/content/skin/icons/view.png");
   --icon-features: url("chrome://phoenityicons/content/skin/icons/features.png");
   --icon-folder-filter: url("chrome://phoenityicons/content/skin/icons/virtual.png");
   --icon-folder-rss: url("chrome://phoenityicons/content/skin/icons/rss.png");
@@ -140,6 +139,10 @@
 */
 }
 
+#appmenu_View {
+  list-style-image: var(--icon-layout);
+}
+
 li[data-server-type="rss"] {
   --icon-rss: url("chrome://phoenityicons/content/skin/icons/server-rss.png");
   --icon-folder: url("chrome://phoenityicons/content/skin/icons/rss.png");
@@ -216,33 +219,34 @@ unified-toolbar-customization {
   --folder-pane-folder-filter: var(--icon-folder-filter);
   --folder-pane-folder-rss: var(--icon-folder-rss);
 
+  --icon-attachment-sm: url("chrome://messenger/skin/icons/new/attachment-sm.svg");
+  --icon-bell: url("chrome://messenger/skin/icons/new/bell.svg");
+  --icon-bell-disabled: url("chrome://messenger/skin/icons/new/bell-disabled.svg");
+  --icon-bell-ring: url("chrome://messenger/skin/icons/new/bell-ring.svg");
   --icon-calendar-empty: url("chrome://messenger/skin/icons/new/calendar-empty.svg");
+  --icon-calendar-imip: url("chrome://messenger/skin/icons/new/normal/calendar-invite.svg");
   --icon-circle-small: url("chrome://messenger/skin/icons/new/circle-sm.svg");
+  --icon-column-menu: url("chrome://messenger/skin/icons/new/column-menu.svg");
+  --icon-event-start: url("chrome://messenger/skin/icons/new/event-start.svg");
+  --icon-event-end: url("chrome://messenger/skin/icons/new/event-end.svg");
+  --icon-event-continue: url("chrome://messenger/skin/icons/new/event-continue.svg");
+  --icon-eye: url("chrome://messenger/skin/icons/new/compact/eye.svg");
   --icon-loading: url("chrome://messenger/skin/icons/new/loading.svg");
+  --icon-mail-sm: url("chrome://messenger/skin/icons/new/mail-sm.svg");
   --icon-nav-down-sm: url("chrome://messenger/skin/icons/new/nav-down-sm.svg");
   --icon-nav-left-sm: url("chrome://messenger/skin/icons/new/nav-left-sm.svg");
   --icon-nav-right-sm: url("chrome://messenger/skin/icons/new/nav-right-sm.svg");
   --icon-nav-up-sm: url("chrome://messenger/skin/icons/new/nav-up-sm.svg");
   --icon-nav-today: url("chrome://messenger/skin/icons/new/nav-today.svg");
-  --icon-column-menu: url("chrome://messenger/skin/icons/new/column-menu.svg");
-  --icon-attachment-sm: url("chrome://messenger/skin/icons/new/attachment-sm.svg");
+  --icon-notify: url("chrome://messenger/skin/icons/new/notify.svg");
+  --icon-recurrence: url("chrome://messenger/skin/icons/new/recurrence.svg");
+  --icon-recurrence-exception: url("chrome://messenger/skin/icons/new/recurrence-exception.svg");
   --icon-spam-sm: url("chrome://messenger/skin/icons/new/spam-sm.svg");
   --icon-star-sm: url("chrome://messenger/skin/icons/new/star-sm.svg");
   --icon-thread-sm: url("chrome://messenger/skin/icons/new/thread-sm.svg");
   --icon-trash-sm: url("chrome://messenger/skin/icons/new/trash-sm.svg");
   --icon-unread-dot: url("chrome://messenger/skin/icons/new/unread-dot.svg");
   --icon-unread-sm: url("chrome://messenger/skin/icons/new/unread-sm.svg");
-  --icon-notify: url("chrome://messenger/skin/icons/new/notify.svg");
-  --icon-calendar-imip: url("chrome://messenger/skin/icons/new/normal/calendar-invite.svg");
-  --icon-event-start: url("chrome://messenger/skin/icons/new/event-start.svg");
-  --icon-event-end: url("chrome://messenger/skin/icons/new/event-end.svg");
-  --icon-event-continue: url("chrome://messenger/skin/icons/new/event-continue.svg");
-  --icon-mail-sm: url("chrome://messenger/skin/icons/new/mail-sm.svg");
-  --icon-bell: url("chrome://messenger/skin/icons/new/bell.svg");
-  --icon-bell-disabled: url("chrome://messenger/skin/icons/new/bell-disabled.svg");
-  --icon-bell-ring: url("chrome://messenger/skin/icons/new/bell-ring.svg");
-  --icon-recurrence: url("chrome://messenger/skin/icons/new/recurrence.svg");
-  --icon-recurrence-exception: url("chrome://messenger/skin/icons/new/recurrence-exception.svg");
 
   --icon-forward-col: url("chrome://messenger/skin/icons/new/compact/forward-col.svg");
   --icon-reply-col: url("chrome://messenger/skin/icons/new/compact/reply-col.svg");
