@@ -291,7 +291,8 @@ toolbar[iconsize="small"] .toolbarbutton-1 .toolbarbutton-icon,
 #quick-filter-bar .toolbarbutton-1 .toolbarbutton-icon,
 #mail-toolbar-menubar2 .toolbarbutton-1 .toolbarbutton-icon,
 #header-view-toolbar .toolbarbutton-1 .toolbarbutton-icon,
-#attachment-view-toolbar .toolbarbutton-1 .toolbarbutton-icon {
+#attachment-view-toolbar .toolbarbutton-1 .toolbarbutton-icon,
+#tabs-toolbar .toolbarbutton-1 .toolbarbutton-icon {
   width: calc(var(--icon-size) - 2px);
   height: calc(var(--icon-size) - 2px);
 }
@@ -354,4 +355,8 @@ toolbar[iconsize="small"] .button-appmenu {
 
 #unifiedToolbarContent.unified-toolbar {
   padding-inline-start: 0px;
+}
+
+:root {
+  --unified-toolbar-padding: 0px;
 }

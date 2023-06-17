@@ -25,6 +25,9 @@ async function loadIconImages() {
   messenger.WindowListener.registerWindow(
     "chrome://messenger/content/SearchDialog.xhtml", "content/scripts/loadMessenger.js");
 
+  messenger.WindowListener.registerWindow(
+    "chrome://calendar/content/calendar-event-dialog.xhtml", "content/scripts/loadMessenger.js");
+
   messenger.WindowListener.startListening();
 
   await messenger.phoenityIconsApi.phoenityIcons();

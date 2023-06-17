@@ -14,7 +14,7 @@
   --icon-app-menu-badged: url("chrome://phoenityicons/content/skin/icons/button-appmenu-badged.png");
   --icon-address-book: url("chrome://phoenityicons/content/skin/icons/button-address.png");
   --icon-calendar-invite: url("chrome://phoenityicons/content/skin/calendar/calendar-small.png");
-  --icon-calendar-today: url("chrome://phoenityicons/content/skin/calendar/goto-today-small.png");
+  --icon-calendar-today: url("chrome://phoenityicons/content/skin/calendar/goto-today-medium.png");
   --icon-calendar: url("chrome://phoenityicons/content/skin/calendar/calendar-small.png");
   --icon-chat: url("chrome://phoenityicons/content/skin/icons/button-chat.png");
   --icon-clock: url("chrome://phoenityicons/content/skin/calendar/freebusy.png");
@@ -25,8 +25,9 @@
   --icon-conversation: url("chrome://phoenityicons/content/skin/icons/button-showconversation.png");
   --icon-compress: url("chrome://phoenityicons/content/skin/icons/button-compact.png");
   --icon-contact: url("chrome://phoenityicons/content/skin/icons/contact.png");
-  --icon-draft: url("chrome://phoenityicons/content/skin/icons/drafts.png");
+  --icon-display-options: url("chrome://phoenityicons/content/skin/icons/display-options.png");
   --icon-download: url("chrome://phoenityicons/content/skin/icons/SaveAs.png");
+  --icon-draft: url("chrome://phoenityicons/content/skin/icons/drafts.png");
   --icon-extension: url("chrome://phoenityicons/content/skin/icons/button-addons.png");
   --icon-export: url("chrome://phoenityicons/content/skin/icons/export.png");
   --icon-features: url("chrome://phoenityicons/content/skin/icons/features.png");
@@ -92,6 +93,7 @@
   --icon-subthread-ignored: url("chrome://phoenityicons/content/skin/icons/subthread-ignored.png");
   --icon-tag: url("chrome://phoenityicons/content/skin/icons/button-tag.png");
   --icon-tasks: url("chrome://phoenityicons/content/skin/calendar/task-small.png");
+  --icon-template: url("chrome://phoenityicons/content/skin/icons/templates.png");
   --icon-thread: url("chrome://phoenityicons/content/skin/icons/thread.png");
   --icon-thread-ignored: url("chrome://phoenityicons/content/skin/icons/thread-ignored.png");
   --icon-tools: url("chrome://phoenityicons/content/skin/icons/tools.png");
@@ -132,7 +134,6 @@
   --icon-spelling: url("chrome://messenger/skin/icons/new/compact/spelling.svg");
   --icon-star: url("chrome://phoenityicons/content/skin/icons/star.png");
   --icon-subtract-circle-sm: url("chrome://messenger/skin/icons/new/subtract-circle-sm.svg");
-  --icon-template: url("chrome://messenger/skin/icons/new/compact/template.svg");
   --icon-tentative: url("chrome://messenger/skin/icons/new/compact/tentative.svg");
   --icon-user-list: url("chrome://messenger/skin/icons/new/compact/user-list.svg");
   --icon-warning: url("chrome://messenger/skin/icons/new/compact/warning.svg");
@@ -319,8 +320,8 @@ unified-toolbar-customization {
 */
 }
 
-:root[uidensity="compact"] {
 /*
+:root[uidensity="compact"] {
   --spaces-icon-mail: var(--icon-mail);
   --spaces-icon-address-book: var(--icon-address-book);
   --spaces-icon-calendar: var(--icon-calendar);
@@ -332,8 +333,8 @@ unified-toolbar-customization {
 
   --font-size-increase: url("chrome://messenger/skin/icons/new/compact/add-circle.svg");
   --font-size-decrease: url("chrome://messenger/skin/icons/new/compact/subtract-circle.svg");
-*/
 }
+*/
 
 :root[uidensity="touch"] {
   --spaces-icon-mail: var(--icon-mail);
