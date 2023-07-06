@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created using Krita: https://krita.org -->
+
+<svg
+   width="184.32pt"
+   height="184.32pt"
+   viewBox="0 0 184.32 184.32"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="folder.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="2.5634765"
+     inkscape:cx="122.68496"
+     inkscape:cy="122.88"
+     inkscape:window-width="1600"
+     inkscape:window-height="841"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2" />
+  <path
+     id="shape0"
+     fill="yellow"
+     fill-rule="evenodd"
+     stroke="red"
+     stroke-width="10"
+     stroke-linecap="square"
+     stroke-linejoin="bevel"
+     d="M 159.99779,28.787718 H 96.614051 L 78.521994,8.0743307 A 23.753517,27.381396 0 0 0 61.783764,0.41321482 H 24.615049 A 24.615043,28.374503 0 0 0 5.4885849e-6,28.787718 V 156.47298 C 5.4885849e-6,172.07896 11.076775,184.84749 24.615049,184.84749 H 159.99779 a 24.615043,28.374503 0 0 0 24.61504,-28.37451 V 57.162221 A 24.615043,28.374503 0 0 0 159.99779,28.787718 Z m -98.460176,0 12.307522,14.187251 H 24.615049 V 28.787718 Z M 159.99779,156.47298 H 24.615049 V 57.162221 h 71.383626 v -0.141872 c 0,-0.709363 1.230752,0.141872 1.846128,0.141872 h 62.152987 z" />
+</svg>

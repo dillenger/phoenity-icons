@@ -31,7 +31,7 @@
     "gecko": {
       "id": "icons@dillinger",
       "strict_min_version": "102.0",
-      "strict_max_version": "116.*"
+      "strict_max_version": "*"
     }
   },
   "theme_experiment": {
