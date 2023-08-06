@@ -318,7 +318,8 @@ toolbar[iconsize="small"] .button-appmenu {
 /* ::::: unified toolbar buttons ::::: */
 
 :root,
-.button {
+.button,
+#tabs-toolbar {
   --icon-size: 20px;
 }
 
@@ -358,5 +359,5 @@ toolbar[iconsize="small"] .button-appmenu {
 }
 
 :root {
-  --unified-toolbar-padding: 0px;
+  --unified-toolbar-padding: 4px 2px !important;
 }

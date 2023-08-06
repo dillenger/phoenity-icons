@@ -1,5 +1,10 @@
 Changelog for Phoenity Icons
 
+3.11
+Fixed Unified Toolbar padding.
+Fixed the size for some small icons.
+Set maximum version to Thunderbird 118.*.
+
 3.10
 Fixed some icons, added some icons.
 Set maximum version to Thunderbird 116.*.
