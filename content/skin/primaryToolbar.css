@@ -359,5 +359,13 @@ toolbar[iconsize="small"] .button-appmenu {
 }
 
 :root {
-  --unified-toolbar-padding: 4px 2px !important;
+  --unified-toolbar-padding: 2px !important;
+}
+
+@media (-moz-os-version: windows-win7),
+       (-moz-os-version: windows-win8),
+       (-moz-os-version: windows-win10) {
+  :root {
+    --unified-toolbar-padding: 4px 2px !important;
+  }
 }
