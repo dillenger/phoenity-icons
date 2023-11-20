@@ -31,7 +31,7 @@
 }
 
 #cardbookToolbarSearchBox {
-  display: flex;
+  flex: 0 !important;
   align-items: center;
 }
 #cardbookSearchInput {

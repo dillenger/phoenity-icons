@@ -33,7 +33,7 @@
   --icon-features: url("chrome://phoenityicons/content/skin/icons/features.png");
   --icon-folder-filter: url("chrome://phoenityicons/content/skin/icons/virtual.png");
   --icon-folder-rss: url("chrome://phoenityicons/content/skin/icons/rss.png");
-  --icon-folder: url("chrome://phoenityicons/content/skin/icons/server-local.png");
+  --icon-folder: url("chrome://phoenityicons/content/skin/icons/folder.png");
   --icon-folder-save: url("chrome://phoenityicons/content/skin/icons/button-file.png");
   --icon-font: url("chrome://phoenityicons/content/skin/icons/font.png");
   --icon-file: url("chrome://phoenityicons/content/skin/icons/button-file.png");
@@ -146,6 +146,14 @@ li[data-server-type="rss"] {
   --icon-folder: url("chrome://phoenityicons/content/skin/icons/rss.png");
 }
 
+li[data-server-type="none"] {
+  --icon-folder: url("chrome://phoenityicons/content/skin/icons/server-local.png");
+}
+
+li[data-server-type="none"] li {
+  --icon-folder: url("chrome://phoenityicons/content/skin/icons/folder.png");
+}
+
 #appmenu_View,
 .unified-toolbar-button,
 unified-toolbar-customization {
@@ -162,6 +170,7 @@ unified-toolbar-customization {
 unified-toolbar-customization {
   --icon-nav-back: url("chrome://phoenityicons/content/skin/icons/button-goback.png");
   --icon-nav-forward: url("chrome://phoenityicons/content/skin/icons/button-goforward.png");
+  --icon-trash: url("chrome://phoenityicons/content/skin/icons/button-mark-deleted.png");
 }
 
 #threadPaneQuickFilterButton {

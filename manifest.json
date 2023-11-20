@@ -3,7 +3,7 @@
   "name": "Phoenity Icons",
   "description": "Phoenity Icons for Thunderbird",
   "homepage_url": "https://addons.thunderbird.net/en-US/thunderbird/addon/phoenity-icons/",
-  "version": "3.11",
+  "version": "3.12",
   "experiment_apis": {
     "WindowListener": {
       "schema": "api/WindowListener/schema.json",
@@ -30,8 +30,8 @@
   "applications": {
     "gecko": {
       "id": "icons@dillinger",
-      "strict_min_version": "102.0",
-      "strict_max_version": "118.*"
+      "strict_min_version": "115.0",
+      "strict_max_version": "121.*"
     }
   },
   "theme_experiment": {
