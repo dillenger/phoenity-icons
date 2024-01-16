@@ -4,9 +4,7 @@
   padding-inline: 3px;
 }
 
-@media (-moz-os-version: windows-win7),
-       (-moz-os-version: windows-win8),
-       (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows) {
   #cardbook-toolbox > #cardbook-toolbar {
     padding-inline: 4px;
   }

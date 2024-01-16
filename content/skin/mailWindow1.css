@@ -13,9 +13,7 @@
   border-bottom: none;
 }
 
-@media (-moz-os-version: windows-win7),
-       (-moz-os-version: windows-win8),
-       (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows) {
   #messengerWindow:not([tabsintitlebar]) > #navigation-toolbox:not(:-moz-lwtheme) {
     background-color: transparent;
   }

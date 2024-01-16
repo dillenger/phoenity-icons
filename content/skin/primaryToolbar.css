@@ -17,58 +17,46 @@
   margin: 1px 3px;
 }
 
-#folderPane-toolbar #locationFolders,
-#folderPane-toolbar > #folder-location-container,
-#folderPane-toolbar > #folderpane-mode-selector {
+#folderPaneHeader #locationFolders,
+#folderPaneHeader > #folder-location-container,
+#folderPaneHeader > #folderpane-mode-selector {
   -moz-box-flex: 1;
 }
 
-#folderPane-toolbar {
+#folderPaneHeader {
   margin-left: 1px;
-  box-shadow: 1px 0px rgba(24, 24, 24, 0.227);
+  box-shadow: var(--toolbarSidebar-box-shadow);
   padding-top: 0px;
   padding-right: 1px;
 }
 
-#folderPane-toolbar:-moz-lwtheme-brighttext {
-  box-shadow: 1px 0px rgba(224, 224, 224, 0.5);
-}
-
-@media (-moz-os-version: windows-win7),
-       (-moz-os-version: windows-win8),
-       (-moz-os-version: windows-win10) {
-  #folderPane-toolbar {
+@media (-moz-platform: windows) {
+  #folderPaneHeader {
     margin-inline-start: 0px;
     padding-top: 1px;
     padding-inline-start: 1px;
-    border-bottom: 1px solid rgba(24, 24, 24, 0.32);
+    border-bottom: var(--toolbarSidebar-border-bottom);
   }
 }
 
-#folderPane-toolbar > .toolbarbutton-1,
-#folderPane-toolbar toolbaritem > menulist {
+#folderPaneHeader > .toolbarbutton-1,
+#folderPaneHeader toolbaritem > menulist {
   margin: 0;
 }
 
-#folderPane-toolbar toolbarbutton {
+#folderPaneHeader toolbarbutton {
   padding: 2px;
 }
 
-#folderPane-toolbar toolbarbutton > toolbarbutton {
+#folderPaneHeader toolbarbutton > toolbarbutton {
   padding: 1px !important;
 }
 
-@media (-moz-os-version: windows-win7),
-       (-moz-os-version: windows-win8),
-       (-moz-os-version: windows-win10) {
-  #folderPane-toolbar > .toolbarbutton-1,
-  #folderPane-toolbar > toolbaritem > menulist {
+@media (-moz-platform: windows) {
+  #folderPaneHeader > .toolbarbutton-1,
+  #folderPaneHeader > toolbaritem > menulist {
     margin-bottom: 1px;
   }
-}
-
-dropmarker > .dropmarker-icon {
-  -moz-image-region: auto;
 }
 
 /* restore the small icons checkbox in Customize window */
@@ -140,7 +128,6 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
 #appmenu_getnewmsgs_all_accounts,
 #button-getmsg {
   list-style-image: url("./icons/button-getmsg.png");
-  -moz-image-region: auto;
 }
 
 #button-newmsg {
@@ -264,10 +251,6 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   display: none;
 }
 
-toolbar[mode="text"] .button-appmenu .toolbarbutton-icon {
-  display: -moz-box !important;
-}
-
 #button-nextUnread, #button-previousUnread[chromedir="rtl"] {
   list-style-image: url("./icons/next-unread.png");
 }
@@ -362,9 +345,7 @@ toolbar[iconsize="small"] .button-appmenu {
   --unified-toolbar-padding: 2px !important;
 }
 
-@media (-moz-os-version: windows-win7),
-       (-moz-os-version: windows-win8),
-       (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows) {
   :root {
     --unified-toolbar-padding: 4px 2px !important;
   }

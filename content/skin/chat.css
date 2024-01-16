@@ -14,7 +14,6 @@
 
 .closeConversationButton {
   margin-inline-end: 0;
-  -moz-stack-sizing: ignore;
   list-style-image: url("./icons/Search-close.png");
   box-shadow: none !important;
 }
@@ -67,9 +66,7 @@
   padding: 0px 3px;
 }
 
-@media (-moz-os-version: windows-win7),
-       (-moz-os-version: windows-win8),
-       (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows) {
   #chat-toolbar {
     padding: 1px 4px;
   }
@@ -159,10 +156,6 @@ richlistitem[state="disconnected"] .accountStateIcon {
 #imStatusUnavailable,
 #appmenu_imStatusUnavailable {
   list-style-image: url("./chat/away-16.png");
-}
-
-toolbar[mode="text"] #statusTypeIcon .toolbarbutton-icon {
-  display: -moz-box;
 }
 
 #displayNameAndstatusMessageStack #statusMessage {

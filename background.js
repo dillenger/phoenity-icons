@@ -29,8 +29,6 @@ async function loadIconImages() {
     "chrome://calendar/content/calendar-event-dialog.xhtml", "content/scripts/loadMessenger.js");
 
   messenger.WindowListener.startListening();
-
-  await messenger.phoenityIconsApi.phoenityIcons();
 }
 
 loadIconImages();
