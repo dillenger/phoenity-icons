@@ -1,5 +1,8 @@
 Changelog for Phoenity Icons
 
+3.14
+Replaced some deprecated code.
+
 3.13
 Fixed/removed some deprecated -moz-prefix & @media rules.
 Removed obsolete Chatbutton icon loader.
