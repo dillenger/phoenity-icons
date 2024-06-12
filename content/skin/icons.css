@@ -214,7 +214,7 @@ unified-toolbar-customization {
 /* Large variations, touch, 24px */
 
 :root {
-  --spaces-icon-mail: var(--icon-mail);
+  --spaces-icon-mail: url("chrome://phoenityicons/content/skin/icons/mail.png");
   --spaces-icon-address-book: var(--icon-address-book);
   --spaces-icon-calendar: var(--icon-calendar);
   --spaces-icon-tasks: var(--icon-tasks);
@@ -226,9 +226,8 @@ unified-toolbar-customization {
   --icon-chat-lg: var(--icon-chat);
   --icon-export-lg: var(--icon-export);
   --icon-import-lg: var(--icon-import);
-  --icon-mail-lg: var(--icon-mail);
+  --icon-mail-lg: url("chrome://phoenityicons/content/skin/icons/mail.png");
 
-/*
   --folder-pane-mail: var(--icon-mail);
   --folder-pane-mail-secure: var(--icon-mail-secure);
   --folder-pane-inbox: var(--icon-inbox);
@@ -247,6 +246,7 @@ unified-toolbar-customization {
   --folder-pane-folder-filter: var(--icon-folder-filter);
   --folder-pane-folder-rss: var(--icon-folder-rss);
 
+/*
   --icon-attachment-sm: url("chrome://messenger/skin/icons/new/attachment-sm.svg");
   --icon-bell: url("chrome://messenger/skin/icons/new/bell.svg");
   --icon-bell-disabled: url("chrome://messenger/skin/icons/new/bell-disabled.svg");
@@ -329,9 +329,8 @@ unified-toolbar-customization {
 */
 }
 
-/*
 :root[uidensity="compact"] {
-  --spaces-icon-mail: var(--icon-mail);
+  --spaces-icon-mail: url("chrome://phoenityicons/content/skin/icons/mail.png");
   --spaces-icon-address-book: var(--icon-address-book);
   --spaces-icon-calendar: var(--icon-calendar);
   --spaces-icon-tasks: var(--icon-tasks);
@@ -340,13 +339,14 @@ unified-toolbar-customization {
   --spaces-icon-settings: var(--icon-settings);
   --spaces-icon-collapse: var(--icon-collapse);
 
+/*
   --font-size-increase: url("chrome://messenger/skin/icons/new/compact/add-circle.svg");
   --font-size-decrease: url("chrome://messenger/skin/icons/new/compact/subtract-circle.svg");
-}
 */
+}
 
 :root[uidensity="touch"] {
-  --spaces-icon-mail: var(--icon-mail);
+  --spaces-icon-mail: url("chrome://phoenityicons/content/skin/icons/mail.png");
   --spaces-icon-address-book: var(--icon-address-book);
   --spaces-icon-calendar: url("chrome://phoenityicons/content/skin/calendar/calendar.png");
   --spaces-icon-tasks: url("chrome://phoenityicons/content/skin/calendar/task.png");
