@@ -78,6 +78,7 @@
   --icon-quit: url("chrome://phoenityicons/content/skin/icons/error.png");
   --icon-quote: url("chrome://phoenityicons/content/skin/icons/quote.png");
   --icon-sent: url("chrome://phoenityicons/content/skin/icons/sent.png");
+  --icon-spam: url("chrome://phoenityicons/content/skin/icons/junk.png");
   --icon-reply: url("chrome://phoenityicons/content/skin/icons/button-reply.png");
   --icon-reply-all: url("chrome://phoenityicons/content/skin/icons/button-replyall.png");
   --icon-reply-list: url("chrome://phoenityicons/content/skin/icons/button-replylist.png");
@@ -160,14 +161,13 @@ unified-toolbar-customization {
   --icon-eye: var(--icon-layout);
 }
 
-#folderPane,
-.unified-toolbar-button,
-unified-toolbar-customization {
+#folderPane {
   --icon-spam: url("chrome://phoenityicons/content/skin/icons/junk-folder.png");
 }
 
 .unified-toolbar-button,
 unified-toolbar-customization {
+  --icon-spam: url("chrome://phoenityicons/content/skin/icons/button-isJunk.png");
   --icon-nav-back: url("chrome://phoenityicons/content/skin/icons/button-goback.png");
   --icon-nav-forward: url("chrome://phoenityicons/content/skin/icons/button-goforward.png");
   --icon-trash: url("chrome://phoenityicons/content/skin/icons/button-mark-deleted.png");
@@ -245,6 +245,8 @@ unified-toolbar-customization {
   --folder-pane-folder: var(--icon-folder);
   --folder-pane-folder-filter: var(--icon-folder-filter);
   --folder-pane-folder-rss: var(--icon-folder-rss);
+
+  --icon-folder-compact-sm: var(--icon-compress);
 
 /*
   --icon-attachment-sm: url("chrome://messenger/skin/icons/new/attachment-sm.svg");
