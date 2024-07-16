@@ -9,12 +9,12 @@
 @namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
 
-#accountCentralBox:-moz-lwtheme {
+#accountCentralBox[lwtheme] {
   border-bottom: none;
 }
 
 @media (-moz-platform: windows) {
-  #messengerWindow:not([tabsintitlebar]) > #navigation-toolbox:not(:-moz-lwtheme) {
+  #messengerWindow:not([tabsintitlebar]) > #navigation-toolbox:not([lwtheme]) {
     background-color: transparent;
   }
 }

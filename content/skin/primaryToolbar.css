@@ -13,14 +13,14 @@
   padding: 0px 3px;
 }
 
-.chromeclass-toolbar toolbarseparator:-moz-lwtheme {
+.chromeclass-toolbar toolbarseparator[lwtheme] {
   margin: 1px 3px;
 }
 
 #folderPaneHeader #locationFolders,
 #folderPaneHeader > #folder-location-container,
 #folderPaneHeader > #folderpane-mode-selector {
-  -moz-box-flex: 1;
+  flex: auto;
 }
 
 #folderPaneHeader {
@@ -166,6 +166,7 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
 }
 
 #hdrTrashButton,
+#navContext-delete,
 .delete-button {
   list-style-image: url("./icons/button-mark-deleted.png");
 }
@@ -176,6 +177,7 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
 
 #hdrJunkButton,
 #hdrSJunkButton,
+#navContext-markAsJunk,
 .junk-button {
   list-style-image: url("./icons/button-isJunk.png");
 }
