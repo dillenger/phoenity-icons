@@ -1,5 +1,8 @@
 Changelog for Phoenity Icons
 
+3.5
+ESMified the add-on.
+
 3.14
 Replaced some deprecated code.
 Fixed some icons, added some icons.

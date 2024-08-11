@@ -1,5 +1,3 @@
-var Services = globalThis.Services || ChromeUtils.import("resource://gre/modules/Services.jsm");
-
 const fileName = "messenger.css";
 
 function onLoad(activatedWhileWindowOpen) {
