@@ -173,6 +173,10 @@ unified-toolbar-customization {
   --icon-trash: url("chrome://phoenityicons/content/skin/icons/button-mark-deleted.png");
 }
 
+#navContext-markAsNotJunk {
+  --icon-spam: url("chrome://phoenityicons/content/skin/icons/button-notJunk.png");
+}
+
 #threadPaneQuickFilterButton {
   --icon-filter: url("chrome://phoenityicons/content/skin/icons/qfb/button-quickFilter.png");
 }
