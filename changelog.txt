@@ -1,7 +1,10 @@
 Changelog for Phoenity Icons
 
-3.5
+3.15
 ESMified the add-on.
+Fixed mark as not junk icon.
+Set minimum version to Thunderbird 128.0.
+Set maximum version to Thunderbird 136.*.
 
 3.14
 Replaced some deprecated code.
