@@ -2,6 +2,7 @@ Changelog for Phoenity Icons
 
 3.16
 Fixed ESModules unloading (and cache flushing) in WindowListener.
+Since the cache wasn't flushed in the previous version you may have to flush it manually.
 Set maximum version to Thunderbird 140.*.
 
 3.15
