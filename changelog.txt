@@ -1,5 +1,9 @@
 Changelog for Phoenity Icons
 
+3.16
+Fixed ESModules unloading (and cache flushing) in WindowListener.
+Set maximum version to Thunderbird 140.*.
+
 3.15
 ESMified the add-on.
 Fixed mark as not junk icon.

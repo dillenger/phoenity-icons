@@ -1143,9 +1143,9 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
       }
     }
 
-    // Unload JSMs of this add-on
+    // Unload ESModules of this add-on
     const rootURI = this.extension.rootURI.spec;
-    for (let module of Cu.loadedModules) {
+    for (let module of Cu.loadedESModules) {
       if (
         module.startsWith(rootURI) ||
         (module.startsWith("chrome://") &&
@@ -2110,9 +2110,9 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
       }
     }
 
-    // Unload JSMs of this add-on
+    // Unload ESModules of this add-on
     const rootURI = this.extension.rootURI.spec;
-    for (let module of Cu.loadedModules) {
+    for (let module of Cu.loadedESModules) {
       if (
         module.startsWith(rootURI) ||
         (module.startsWith("chrome://") &&
