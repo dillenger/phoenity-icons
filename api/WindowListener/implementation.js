@@ -297,8 +297,8 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
 
   // async sleep function using Promise
   async sleep(delay) {
-    let timer = Components.classes["@mozilla.org/timer;1"].createInstance(
-      Components.interfaces.nsITimer
+    let timer = Cc["@mozilla.org/timer;1"].createInstance(
+      Ci.nsITimer
     );
     return new Promise(function (resolve, reject) {
       let event = {
@@ -309,7 +309,7 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
       timer.initWithCallback(
         event,
         delay,
-        Components.interfaces.nsITimer.TYPE_ONE_SHOT
+        Ci.nsITimer.TYPE_ONE_SHOT
       );
     });
   }
@@ -386,7 +386,7 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
             let uriObject = Services.io.newURI(uriString);
             let content = Cu.readUTF8URI(uriObject);
           } catch (e) {
-            Components.utils.reportError(e);
+            Cu.reportError(e);
             return false;
           }
           return true;
@@ -547,7 +547,7 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
                 }
               }
             } catch (e) {
-              Components.utils.reportError(e);
+              Cu.reportError(e);
             }
           }
 
@@ -964,7 +964,7 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
         );
         window[this.uniqueRandomID].onLoad(isAddonActivation);
       } catch (e) {
-        Components.utils.reportError(e);
+        Cu.reportError(e);
       }
     }
   }
@@ -999,7 +999,7 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
           // Call onUnload()
           window[this.uniqueRandomID].onUnload(isAddonDeactivation);
         } catch (e) {
-          Components.utils.reportError(e);
+          Cu.reportError(e);
         }
       }
 
@@ -1130,7 +1130,7 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
           "UTF-8"
         );
     } catch (e) {
-      Components.utils.reportError(e);
+      Cu.reportError(e);
     }
 
     // Extract all registered chrome content urls
@@ -1330,8 +1330,8 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
 
   // async sleep function using Promise
   async sleep(delay) {
-    let timer = Components.classes["@mozilla.org/timer;1"].createInstance(
-      Components.interfaces.nsITimer
+    let timer = Cc["@mozilla.org/timer;1"].createInstance(
+      Ci.nsITimer
     );
     return new Promise(function (resolve, reject) {
       let event = {
@@ -1342,7 +1342,7 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
       timer.initWithCallback(
         event,
         delay,
-        Components.interfaces.nsITimer.TYPE_ONE_SHOT
+        Ci.nsITimer.TYPE_ONE_SHOT
       );
     });
   }
@@ -1450,7 +1450,7 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
             let uriObject = Services.io.newURI(uriString);
             let content = Cu.readUTF8URI(uriObject);
           } catch (e) {
-            Components.utils.reportError(e);
+            Cu.reportError(e);
             return false;
           }
           return true;
@@ -1611,7 +1611,7 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
                 }
               }
             } catch (e) {
-              Components.utils.reportError(e);
+              Cu.reportError(e);
             }
           }
 
@@ -1964,7 +1964,7 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
         );
         window[this.uniqueRandomID].onLoad(isAddonActivation);
       } catch (e) {
-        Components.utils.reportError(e);
+        Cu.reportError(e);
       }
     }
   }
@@ -1995,7 +1995,7 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
           // Call onUnload()
           window[this.uniqueRandomID].onUnload(isAddonDeactivation);
         } catch (e) {
-          Components.utils.reportError(e);
+          Cu.reportError(e);
         }
       }
 
@@ -2097,7 +2097,7 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
           "UTF-8"
         );
     } catch (e) {
-      Components.utils.reportError(e);
+      Cu.reportError(e);
     }
 
     // Extract all registered chrome content urls
@@ -2111,17 +2111,17 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
     }
 
     // Unload ESModules of this add-on
-    const rootURI = this.extension.rootURI.spec;
-    for (let module of Cu.loadedESModules) {
-      if (
-        module.startsWith(rootURI) ||
-        (module.startsWith("chrome://") &&
-          chromeUrls.find((s) => module.startsWith(s)))
-      ) {
-        this.log("Unloading: " + module);
-        Cu.unload(module);
-      }
-    }
+    //const rootURI = this.extension.rootURI.spec;
+    //for (let module of Cu.loadedESModules) {
+      //if (
+        //module.startsWith(rootURI) ||
+        //(module.startsWith("chrome://") &&
+          //chromeUrls.find((s) => module.startsWith(s)))
+      //) {
+        //this.log("Unloading: " + module);
+        //Cu.unload(module);
+      //}
+    //}
 
     // Flush all caches
     Services.obs.notifyObservers(null, "startupcache-invalidate");

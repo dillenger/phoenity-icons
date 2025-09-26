@@ -78,7 +78,7 @@
   --icon-quit: url("chrome://phoenityicons/content/skin/icons/error.png");
   --icon-quote: url("chrome://phoenityicons/content/skin/icons/quote.png");
   --icon-sent: url("chrome://phoenityicons/content/skin/icons/sent.png");
-  --icon-spam: url("chrome://phoenityicons/content/skin/icons/junk-col.svg");
+  --icon-spam: url("chrome://phoenityicons/content/skin/icons/button-isJunk.png");
   --icon-reply: url("chrome://phoenityicons/content/skin/icons/button-reply.png");
   --icon-reply-all: url("chrome://phoenityicons/content/skin/icons/button-replyall.png");
   --icon-reply-list: url("chrome://phoenityicons/content/skin/icons/button-replylist.png");
@@ -173,8 +173,8 @@ unified-toolbar-customization {
   --icon-trash: url("chrome://phoenityicons/content/skin/icons/button-mark-deleted.png");
 }
 
-#navContext-markAsNotJunk {
-  --icon-spam: url("chrome://phoenityicons/content/skin/icons/button-notJunk.png");
+#threadTree{
+  --icon-spam: url("chrome://phoenityicons/content/skin/icons/junk-col.svg");
 }
 
 #threadPaneQuickFilterButton {
