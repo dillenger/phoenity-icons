@@ -3,7 +3,7 @@ Changelog for Phoenity Icons
 3.17
 Removed deprecated ESModules unloading from WindowListener.
 Fixed mark as junk context menu icon.
-Added Ci, Cu, Cr shorthands for Components.interfaces, Components.utils and Components.results.
+Added Ci and Cu shorthands for Components.interfaces and Components.utils.
 Set maximum version to Thunderbird 145.*.
 
 3.16
