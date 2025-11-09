@@ -53,6 +53,7 @@
   --icon-lock-disabled: url("phoenityicons/content/skin/icons/lock-disabled.png");
   --icon-mail: url("chrome://phoenityicons/content/skin/icons/server.png");
   --icon-mail-secure: url("chrome://phoenityicons/content/skin/icons/server-secure.png");
+  --icon-mobile-export: url("chrome://phoenityicons/content/skin/icons/handphone_right.png");
   --icon-new-address-book: url("chrome://phoenityicons/content/skin/cardbook/abook_new.png");
   --icon-new-contact: url("chrome://phoenityicons/content/skin/chat/button-add-buddy.png");
   --icon-new-indicator: url("chrome://phoenityicons/content/skin/icons/star-new-overlay.png");
@@ -100,6 +101,7 @@
   --icon-trash: url("chrome://phoenityicons/content/skin/icons/trash.png");
   --icon-unread: url("chrome://phoenityicons/content/skin/icons/button-mark.png");
   --icon-user: url("chrome://phoenityicons/content/skin/icons/userIcon.png");
+  --icon-warning: url("chrome://phoenityicons/content/skin/icons/warning.png");
 
 /*
   --icon-add: url("chrome://messenger/skin/icons/new/compact/add.svg");
@@ -137,7 +139,6 @@
   --icon-subtract-circle-sm: url("chrome://messenger/skin/icons/new/subtract-circle-sm.svg");
   --icon-tentative: url("chrome://messenger/skin/icons/new/compact/tentative.svg");
   --icon-user-list: url("chrome://messenger/skin/icons/new/compact/user-list.svg");
-  --icon-warning: url("chrome://messenger/skin/icons/new/compact/warning.svg");
   --icon-warning-sm: url("chrome://messenger/skin/icons/warning-12.svg");
 */
 }
@@ -231,6 +232,7 @@ unified-toolbar-customization {
   --icon-export-lg: var(--icon-export);
   --icon-import-lg: var(--icon-import);
   --icon-mail-lg: url("chrome://phoenityicons/content/skin/icons/mail.png");
+  --icon-mobile-export-lg: var(--icon-mobile-export);
 
   --folder-pane-mail: var(--icon-mail);
   --folder-pane-mail-secure: var(--icon-mail-secure);
@@ -251,6 +253,7 @@ unified-toolbar-customization {
   --folder-pane-folder-rss: var(--icon-folder-rss);
 
   --icon-folder-compact-sm: var(--icon-compress);
+  --icon-mobile-export-sm: var(--icon-mobile-export);
   --icon-spam-sm: url("chrome://phoenityicons/content/skin/icons/junk-col.svg");
 
 /*

@@ -1,5 +1,12 @@
 Changelog for Phoenity Icons
 
+3.19
+Added Export for Mobile icon.
+
+3.18
+Fixed warning icon.
+Set maximum version to Thunderbird 146.*.
+
 3.17
 Removed deprecated ESModules unloading from WindowListener.
 Fixed mark as junk context menu icon.
