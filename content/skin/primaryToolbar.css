@@ -168,7 +168,7 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
 #hdrTrashButton,
 #navContext-delete,
 .delete-button {
-  list-style-image: url("./icons/button-mark-deleted.png");
+  --icon-trash: url("chrome://phoenityicons/content/skin/icons/button-mark-deleted.png");
 }
 
 #button-compact {

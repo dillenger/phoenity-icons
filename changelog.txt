@@ -2,6 +2,8 @@ Changelog for Phoenity Icons
 
 3.19
 Added Export for Mobile icon.
+Fixed delete icon in context menus.
+Set maximum version to Thunderbird 151.*.
 
 3.18
 Fixed warning icon.
