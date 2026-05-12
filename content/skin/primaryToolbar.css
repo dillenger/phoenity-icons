@@ -300,6 +300,13 @@ toolbar[iconsize="small"] .button-appmenu {
   list-style-image: url("./icons/button-appmenu-small.png");
 }
 
+#tabs-toolbar .toolbarbutton-1[open="true"],
+#tabs-toolbar .toolbarbutton-1:not([disabled]):hover {
+  color: var(--button-hover-text-color);
+  background-color: var(--toolbar-button-hover-background-color);
+  border-color: var(--toolbar-button-hover-border-color);
+}
+
 /* ::::: unified toolbar buttons ::::: */
 
 :root,

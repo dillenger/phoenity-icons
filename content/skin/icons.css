@@ -59,8 +59,8 @@
   --icon-new-indicator: url("chrome://phoenityicons/content/skin/icons/star-new-overlay.png");
   --icon-nav-down: url("chrome://phoenityicons/content/skin/icons/button-nextMsg.png");
   --icon-nav-down-unread: url("chrome://phoenityicons/content/skin/icons/next-unread.png");
-  --icon-nav-back: url("chrome://phoenityicons/content/skin/icons/message-incoming.png");
-  --icon-nav-forward: url("chrome://phoenityicons/content/skin/icons/message-outgoing.png");
+  --icon-nav-back: url("chrome://phoenityicons/content/skin/icons/message-incoming.svg");
+  --icon-nav-forward: url("chrome://phoenityicons/content/skin/icons/message-outgoing.svg");
   --icon-nav-up: url("chrome://phoenityicons/content/skin/icons/button-previousMsg.png");
   --icon-nav-up-unread: url("chrome://phoenityicons/content/skin/icons/previous-unread.png");
   --icon-new-task: url("chrome://phoenityicons/content/skin/calendar/newtask-small.png");
@@ -214,7 +214,9 @@ unified-toolbar-customization {
   --icon-attachment: url("chrome://phoenityicons/content/skin/icons/qfb/qfb-attachment.png");
 }
 
-
+.tab-content[title="CardBook"] .tab-icon-image {
+  --icon-file: url("chrome://phoenityicons/content/skin/cardbook/cardbook_24.png");
+}
 
 /* Large variations, touch, 24px */
 
