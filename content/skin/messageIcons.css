@@ -108,11 +108,11 @@ treechildren::-moz-tree-image(junkStatusCol, notjunk) {
 /* ..... correspondent column ..... */
 
 treechildren::-moz-tree-image(correspondentCol, incoming) {
-  list-style-image: url("./icons/message-incoming.png");
+  list-style-image: url("./icons/message-incoming.svg");
 }
 
 treechildren::-moz-tree-image(correspondentCol, outgoing) {
-  list-style-image: url("./icons/message-outgoing.png") !important;
+  list-style-image: url("./icons/message-outgoing.svg") !important;
 }
 
 /* ..... subject column ..... */
