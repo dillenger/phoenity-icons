@@ -1,5 +1,13 @@
 Changelog for Phoenity Icons
 
+3.21
+Set maximum version to Thunderbird 159.*.
+
+3.20
+Fixed scriptloader (allowUnsafeURL: true).
+Added update url, this version is not hosted at ATN.
+Set maximum version to Thunderbird 158.*.
+
 3.19
 Added Export for Mobile icon.
 Fixed delete icon in context menus.

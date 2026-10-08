@@ -2,8 +2,9 @@
   "manifest_version": 2,
   "name": "Phoenity Icons",
   "description": "Phoenity Icons for Thunderbird",
-  "homepage_url": "https://addons.thunderbird.net/en-US/thunderbird/addon/phoenity-icons/",
-  "version": "3.20",
+  "version": "3.21",
+  "author": "Dillinger",
+  "homepage_url": "https://addons.phoenity.nl/",
   "experiment_apis": {
     "WindowListener": {
       "schema": "api/WindowListener/schema.json",
@@ -22,8 +23,9 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "icons@dillinger",
+      "update_url": "https://addons.phoenity.nl/updates.txt",
       "strict_min_version": "128.0",
-      "strict_max_version": "*"
+      "strict_max_version": "159.*"
     }
   },
   "theme_experiment": {

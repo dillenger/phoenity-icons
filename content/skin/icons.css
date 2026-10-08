@@ -50,7 +50,7 @@
   --icon-key: url("chrome://phoenityicons/content/skin/icons/key.png");
   --icon-layout: url("chrome://phoenityicons/content/skin/icons/layout.png");
   --icon-lock: url("chrome://phoenityicons/content/skin/icons/lock.png");
-  --icon-lock-disabled: url("phoenityicons/content/skin/icons/lock-disabled.png");
+  --icon-lock-disabled: url("chrome://phoenityicons/content/skin/icons/lock-disabled.png");
   --icon-mail: url("chrome://phoenityicons/content/skin/icons/server.png");
   --icon-mail-secure: url("chrome://phoenityicons/content/skin/icons/server-secure.png");
   --icon-mobile-export: url("chrome://phoenityicons/content/skin/icons/handphone_right.png");
