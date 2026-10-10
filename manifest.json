@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Phoenity Icons",
   "description": "Phoenity Icons for Thunderbird",
-  "version": "3.21",
+  "version": "3.22",
   "author": "Dillinger",
   "homepage_url": "https://addons.phoenity.nl/",
   "experiment_apis": {
@@ -25,7 +25,7 @@
       "id": "icons@dillinger",
       "update_url": "https://addons.phoenity.nl/updates.txt",
       "strict_min_version": "128.0",
-      "strict_max_version": "159.*"
+      "strict_max_version": "160.*"
     }
   },
   "theme_experiment": {
