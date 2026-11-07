@@ -25,7 +25,7 @@
       "id": "icons@dillinger",
       "update_url": "https://addons.phoenity.nl/updates.txt",
       "strict_min_version": "128.0",
-      "strict_max_version": "160.*"
+      "strict_max_version": "162.*"
     }
   },
   "theme_experiment": {
